@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open-Sans', sans-serif;
+}
+body{
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items:center;
+      padding: 10px;
+      background: lightblue;
+}
+.container{
+      max-width: 700px;
+      width: 100%;
+      background: white;
+      padding: 25px 30px;
+      border-radius: 5px;
+}
+
+.container form .user-details{
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+}
+form .user-details .input-box{
+      margin: 20px 0 12px 0;
+      width:calc(100%/2 - 20px);
+}
+
+.user-details .input-box input ,#cities, #language{
+      height: 45px;
+      width: 100%;
+      border-bottom-width: 2px;
+      border:none;
+      font-size: 17px;
+      border-bottom: 2px solid silver;
+      transition:all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+      border-color: #9b59b6;
+}
+form .button{
+      height: 45px;
+      margin: 45px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+form .button input{
+      height: 100%;
+      width: 25%;
+      outline:none;
+      color: #fff;
+      background:rgb(146, 231, 65);
+      border: none;
+      color: black;
+      font-size: large;
+}
+form .bottom{
+      display:flex;
+      flex-wrap: wrap;
+}
+form .bottom a{
+      color:black;
+}
+form .bottom a:link {
+      background-color: transparent;
+      text-decoration: none;
+      color: black;
+}
+@media (max-width: 584px){
+      .container{
+            max-width: 100%;
+      }
+      form .user-details .input-box{
+            margin-bottom:15px;
+            width:100%;
+      }
+      .container form .user-details{
+            max-height:300px;
+            
+      }
+}
+
